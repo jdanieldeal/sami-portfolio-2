@@ -1,5 +1,9 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
 
 /*
 	Landed by HTML5 UP
@@ -83,7 +87,7 @@ input, select, textarea {
 	}
 
 	html, body {
-		background: #1c1d26;
+		background: #f1cb73;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -99,7 +103,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: 'Joan', serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
@@ -201,7 +205,7 @@ input, select, textarea {
 	}
 
 	code {
-		background: rgba(255, 255, 255, 0.075);
+		background: rgba(244, 169, 64, 0.684);
 		border-radius: 4px;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
@@ -3313,7 +3317,7 @@ input, select, textarea {
 /* Dropotron */
 
 	.dropotron {
-		background: rgba(39, 40, 51, 0.965);
+		background: rgba(63, 16, 58, 0.965);
 		border-radius: 4px;
 		box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
 		list-style: none;
@@ -3393,7 +3397,14 @@ input, select, textarea {
 			margin: 0;
 			position: absolute;
 			top: 0;
+			font-size: 22pt;
 		}
+		/* .ballpoint {
+			height: 220px;
+			margin: 0;
+			position: absolute;
+			top: 0;
+		} */
 
 		#header nav {
 			position: absolute;
@@ -3417,6 +3428,7 @@ input, select, textarea {
 						height: inherit;
 						line-height: inherit;
 						outline: 0;
+						font-size: 22pt;
 					}
 
 						#header nav ul li a.button, #header nav ul li span.button {
@@ -3447,15 +3459,38 @@ input, select, textarea {
 		position: absolute;
 	}
 
+	/* Standard syntax */
+@keyframes backgroundColorPalette {
+	0% {
+		background: #d1a397;
+	}
+	
+	25% {
+		background: #e2b69f;
+	}
+	50% {
+		background: #e3d1a4;
+	}
+	75% {
+		background: #ded099;
+	}
+	100% {
+		background: #e3c896;
+	}
+  }
+
 /* Banner */
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		animation-name: backgroundColorPalette;
+		animation-duration: 15s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		/* background-image: url(../../images/banner5.jpg); */
 		background-position: center center;
 		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		box-shadow: 0 0.25em 0.5em 0 rgb(0 0 0 / 25%);
 		min-height: 100vh;
 		position: relative;
 		text-align: center;
@@ -3472,7 +3507,7 @@ input, select, textarea {
 
 		#banner:after {
 			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			/* background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");; */
 			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			content: '';
@@ -3501,8 +3536,9 @@ input, select, textarea {
 			}
 
 				#banner .content header h2 {
-					font-size: 2.5em;
+					font-size: 4.5em;
 					margin: 0;
+					font-family: 'Meddon', cursive;
 				}
 
 				#banner .content header p {
